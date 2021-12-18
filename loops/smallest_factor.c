@@ -1,8 +1,8 @@
-// Print factors for the given number
+// Print smallest factor
 
 void main()
 {
-   int n, i, total = 0;
+   int n, i, found = 0;
 
       printf("Enter a number :");
       scanf("%d",&n);
@@ -11,9 +11,12 @@ void main()
       {
          if(n % i == 0)
          {
-             total += i;
+           printf("Smallest factor = %d",i);
+           found = 1;
+           break;
          }
       }
 
-      printf("Total of factors = %d", total);
+      if (found == 0)
+          printf("Smallest factor = %d", n);
 }
