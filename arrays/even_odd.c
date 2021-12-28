@@ -22,7 +22,7 @@ void main()
 
      }
 
-      for(i = 0; i < 10 ; i ++)
+     for(i = 0; i < 10 ; i ++)
      {
          if (a[i] % 2 == 1)
              printf("%5d", a[i]);
